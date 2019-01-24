@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Technology-BBC news
+	</title>
+	<style type="text/css">
+		#topbar{
+			width: :1000px;
+			margin:0 auto;
+			height: 40px;
+			
+
+		}
+		body{
+			margin: 0;
+			padding: 0;
+			font-family: Helvetica, Arial, sans-derif;
+			
+		}
+		#logo
+		{
+			margin-top: 6px;
+			width: 90px;
+			float: left;
+			margin-right: 8px;
+		}
+		.topbar-section{
+			float: left;
+			border-left: 1px #cccccc solid;
+			height: 100%;
+			white-space: nowrap;
+  			overflow: hidden;
+		}
+		#signin-image{
+			width: 30px;
+			margin:8px;
+			float: left;
+
+		}
+		#signin-text{
+			font-weight: bold;
+			font-size:90%;
+			position: relative;
+			top: 10px;
+			padding-right: 50px;
+			
+
+		}
+		.topbar-menu{
+/*			white-space: nowrap;
+  			overflow: hidden;*/
+			font-weight: bold;
+			font size: 90%;
+			padding:10px 15px 0 15px;
+			height:30px;
+			position: relative;
+
+
+		}
+		#more-arrow{
+			width: 16px;
+			margin-left: 20px;
+		}
+		#search-box{
+			background-color:#cccccc;
+			border: none ;
+			font-size: 14px;
+			padding: 5px;
+			margin:5px;
+			color: white;
+		}
+		.clear{
+			clear:both;
+		}
+		#menu-bar-container
+		{
+			border:1px #cccccc solid;
+			background-color:#bb1919;
+			width: 100%;
+			height: 80px;
+			
+		}
+		#menu-bar {
+                
+                width:1200px;
+                margin:0 auto;
+                
+         }
+		h1{
+			color: white;
+			margin: 0 auto;
+			padding:0;
+			font-size: 40px;
+			font-weight: normal;
+			padding-top: 8px;
+			padding-left: 8px;
+			float: left;
+		}
+		#local-news
+		{
+			border: 1px #BB4545 solid;
+                float:right;
+                width:220px;
+                padding: 18px 8px 5px 8px;
+                margin: 5px 0 0 0;
+                height: 20px;
+		}
+		#local-news a{
+			color:white;
+                text-decoration: none;
+                font-size:25px;
+                position:relative;
+                top:-8px;
+		}
+		#local-news a:hover{
+			text-decoration: underline;
+
+
+		}
+		#menu-bar-2-container{
+			background-color: #a91717;
+			width: 100%;
+		}
+		#menu-bar-2{
+			width: 1200px;
+			margin: 0 auto;
+			height: 30px;
+		}
+		#menu-bar-2 a{
+			text-decoration: none;
+			color: white;
+			margin-top: 10px;
+			padding-top: -20px;
+			padding-right: 10px;
+			padding-left: 4px;
+			border-right: 1px solid #bb4545;
+			position: relative;
+			font-size: 12px;
+			top :6px;
+
+		}
+		#menu-bar-2 a:hover
+		{
+			text-decoration: underline;
+			color: #cccccc
+		}
+		.no-border{
+			border-right: none !important;
+		}
+		#page-container{
+			width: 1200px;
+			margin:0 auto;
+
+		}
+		h2{
+			font-weight: normal;
+			font-size: 20px;
+			color: black;
+			text-decoration: none;
+			margin-left: 5px;
+			height: 8px;
+			margin-top: 18px;
+		}
+		#world-text{
+			border-bottom: 6px solid #bb1919;
+		}
+		#country-list a{
+			text-decoration: none;
+			margin:0 auto;
+			color: black;
+			text-decoration: bold;
+			border-right: 1px solid #cccccc ;
+
+			padding-right: 8px;
+			padding-left: 8px;
+			font-size: 20px;
+			height: 28px;
+			position: relative;
+			float: left;
+			padding-bottom: 2px;
+
+		}
+		#country-list a:hover{
+			border-width: 100%;
+			border-bottom: 6px solid #bb1919;
+			
+		}
+		h3 a{
+			
+			margin:0 auto;
+			text-decoration: none;
+			font-size: 30px;
+			color:black;
+			font-weight: normal;
+			
+			}
+		#article-summary{
+			color: #5a5a5a;
+			width: 250px;
+			float: left;
+			margin:0;
+			
+			
+		}
+		#article-summary img{
+			position: relative;
+			width: 20px;
+			height: 20px;
+			top: 2px;
+			
+		}
+		#topic-link{
+			text-decoration: none;
+			color: #a91717;
+			border-left: 1px solid #cccccc;
+			padding-left: 5px;
+
+		}
+		#article-summary a:hover{
+
+			border-bottom: 2px solid #bb1919;
+			
+
+		}
+		#article-container{
+			float: left;
+			width: 670px;
+			border-right: 1px solid #cccccc;
+			padding:20px;
+			position: relative;
+
+		}
+		#germany-pic{
+			width: 400px;
+			margin-left: 10px;
+			height: 250px;
+
+		
+
+		}
+		#article-hr{
+			border-top: 1px solid #a91717;
+			width: 50px;
+			padding-left: 5px;
+			margin-left: 5px;
+		}
+		.link-align
+		{
+			width: 50%;
+			color: black;
+			text-decoration: none;
+			border:none !important;
+			margin-bottom: 5px;
+			font-weight: normal;
+		}
+		#watch-listen{
+			margin-left: 20px;
+
+		}
+		h4{
+			font-weight: normal;
+			font-size: 20px;
+		}
+
+
+
+
+
+	</style>
+</head>
+<body>
+	<div id="topbar">
+
+		<img id="logo" src="logo.jpg">
+		<div id="signin-div" class="topbar-section">
+			<img id="signin-image" src="signin-image.jpg">
+			<span id="signin-text">Sign in</span>
+		</div>
+		<div class="topbar-section topbar-menu" >
+			Home
+			
+		</div>
+		<div class="topbar-section topbar-menu" >
+			News
+			
+		</div>
+		<div class="topbar-section topbar-menu" >
+			Sports
+			
+		</div>
+		<div class="topbar-section topbar-menu" >
+			Weather
+			
+		</div>
+		<div class="topbar-section topbar-menu" >
+			Shop
+			
+		</div>
+		<div class="topbar-section topbar-menu" >
+			Reel
+			
+		</div>
+		<div class="topbar-section topbar-menu" >
+			Travel
+			
+		</div>
+		<div class="topbar-section topbar-menu" >
+			More
+			<img id="more-arrow" src="arrow.jpg">
+			
+		</div>
+		<div class="topbar-section">
+			<input id="search-box" type="text" name="search button" value="Search">
+			
+		</div>
+
+	</div>
+	<div class="clear" >
+	</div>
+	<div id="menu-bar-container"> 
+		<div id="menu-bar">
+			<h1>NEWS</h1>
+			<div id="local-news">
+			<a href=""> Find Local News</a>
+			</div>
+		</div>
+		<div class="clear"></div>
+
+		<div id="menu-bar-2-container">
+			<div id="menu-bar-2">
+				<a href="">Home</a>
+				<a href="">Video</a>
+				<a href="">World</a>
+				<a href="">Business</a>
+				<a href="">Tech</a>
+				<a href="">Science</a>
+				<a href="">Stories</a>
+				<a href="">Entertainment</a>
+				<a href="">Health</a>
+				<a href="">World News</a>
+				<a href="">In Pictures</a>
+				<a href="">Reality Check</a>
+				<a href="">NewsBeat</a>
+				<a class="no-border" href="">More</a>
+				
+				
+			</div>
+		</div>
+	</div>
+	<div class="clear"></div>
+	<div id="page-container">
+		<div id="main-article">
+			<h2>
+				<div id="country-list" >
+					<a id="world-text" href="">World</a>
+					<a href="">Asia</a>
+					<a href="">Africa</a>
+					<a href="">Ausralia</a>
+					<a href="">Europe</a>
+					<a href="">Latin America</a>
+					<a href="">Middle East</a>
+					<a class="no-border" href="">US/Canada</a>
+				</div>
+			</h2>
+			<div class="clear" >
+				</div>
+			<div id="article-container" >
+				<h3>
+					<a class="clear" href="">Germany defends handling of data attack</a>
+				</h3>
+
+				<div id="article-summary">
+				<p><br>Cybersecurity officials say they did not know the full extent of data breach affecting politicians.</p>
+				<p><img src="clock.jpg"> 5 January 2019 
+					<a id="topic-link" href=""> Europe</a>
+
+				</p>
+				<hr align="left" id="article-hr">	
+				
+				<p><a class="link-align" href="">'The end of truth as we know it?'
+				</a>
+				<br>
+				<a class="link-align" href="">How sextortion scammers targeted a BBC reporter</a><br>
+				<a class="link-align" href="">Celebrities 'hacked' to spur Twitter fix</a><br>
+				<a class="link-align" href="">Hot tub hack reveals washed-up security</a></p>	
+				
+
+				</div>
+					<div>
+					<img id="germany-pic" src="germany.jpg">
+				</div>
+				
+		</div>
+		<div class="clear"></div>
+		<div id="watch-listen">
+			<h4>Watch/Listen<h4>
+			
+		</div>
+		</div>
+		
+	</div>
+</body>
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        
+        <title>Javascript</title>
+        <!-- <style type="text/css">
+        	.circle{
+/*        		width: 200px;
+        		height: 200px;
+        		border-radius: 50%*/
+        		
+        		border-radius: 50%;
+        		height: 60px;
+        		width: 60px;
+        		color: red; 
+        		float: left;
+        		margin-right: 20px;
+        	}
+        	#red-circle{
+        		background-color: red;
+        	}
+        	#yellow-circle{
+        		background-color: yellow;
+
+        	}
+        	#blue-circle{
+        		background-color: blue;
+        	}
+        </style> -->
+        <style type="text/css">
+        	#shape{
+        		width: 200px;
+        		height: 200px;
+        		background-color: red;
+        		display: none;
+        		position: relative;
+
+
+        	}
+        </style>
+        
+        
+    
+    </head>
+
+    <body>
+        
+        <!-- <p id="text">Hello World!</p>
+        
+        <button id="myButton">Change text</button>
+        
+        <p id="secondParagraph">Javascript is ... </p>
+        
+        <button id="secondButton">Append text</button>
+        
+        <p id="emptyParagraph"></p>
+        
+        <button id="createParagraph">Create text</button>
+        <p id="more-text"> extra </p>
+        <button id="style-text"> Style text</button>
+         -->
+        
+        <!-- <script type="text/javascript">
+
+        	var myArray=new Array();
+        	myArray[0]="pizza";
+        	var x=["Hi","Hello","Its Pj"]
+        	x.push("Its Pranav");
+        	x.splice(1,2,"its not me");
+        	console.log(x);
+
+            
+	
+        
+        </script>
+         -->
+         <p>
+         	Your time: <span id="timeTaken"></span>
+         </p>
+         <div id="shape"></div>
+  
+         <script type="text/javascript">
+
+         	var start=new Date().getTime();
+
+         	function getRandomColor() {
+  				var letters = '0123456789ABCDEF';
+ 				var color = '#';
+ 				for (var i = 0; i < 6; i++) {
+   					 color += letters[Math.floor(Math.random() * 16)];
+ 				}
+  				return color;
+			}
+
+         	function makeShapeAppear(){
+         		var top=Math.random()*400;
+         		document.getElementById("shape").style.top=top+"px";
+         		var left=Math.random()*400;
+         		document.getElementById("shape").style.left=left+"px";
+
+         		var width=Math.random()*400;
+         		document.getElementById("shape").style.width=width+10+"px";
+         		var height=Math.random()*400;
+         		document.getElementById("shape").style.height=height+"px";
+         		
+
+         		document.getElementById("shape").style.backgroundColor=getRandomColor();
+         		document.getElementById("shape").style.display="block";
+
+         		start=new Date().getTime();
+
+         	}
+         	function appearAfterDelay(){
+
+         	setTimeout(makeShapeAppear,Math.random()*2000);
+         	}
+         	appearAfterDelay();
+
+         	document.getElementById("shape").onclick=function(){
+
+
+
+         		document.getElementById("shape").style.display="none";
+
+         		var end=new Date().getTime();
+
+         		var timetaken=(end-start)/1000;
+         		document.getElementById("timeTaken").innerHTML=timetaken+ "  s" ;
+         		appearAfterDelay();
+
+
+
+         	}
+
+
+
+
+         </script>
+    </body>
+
+</html>
+<!--	
+         	document.getElementById("checkGuess").onclick  =function()
+         		{
+         		var randonnumber=Math.random();
+         		randonnumber=randonnumber*6;
+         		randonnumber=Math.floor(randonnumber);
+
+         		if (document.getElementById("guess").value == randonnumber) {
+         			alert("well done");
+
+         		}
+         		else{
+         			alert("Sorry wrong guess with no "+ randonnumber);
+         		}
+
+         	}  
+	document.getElementById("myButton").onclick = function() {
+                
+                document.getElementById("text").innerHTML = "Hello Rob!";
+                
+            }
+            
+            document.getElementById("secondButton").onclick = function() {
+                
+                document.getElementById("secondParagraph").innerHTML = "I think " + document.getElementById("secondParagraph").innerHTML + "awesome!";
+                
+            }
+            
+            document.getElementById("createParagraph").onclick = function() {
+                
+                
+                document.getElementById("emptyParagraph").innerHTML = "<h1>Hi there!</h1>";
+                
+            }      
+            document.getElementById("style-text").onclick=function () {
+
+            	document.getElementById("more-text").style.display="none";
+            	// body...
+            } -->

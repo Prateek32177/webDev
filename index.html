@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		jQuery
+	</title>
+	<script type="text/javascript" src="jquery.js"></script> 
+	<style type="text/css">
+		h1{
+			background-color:#1111;
+			
+			padding: 20px;
+			text-align:center;
+			border-bottom: 4px black solid;
+			margin-bottom: 10px;
+
+		}
+		#container{
+			width:90%;
+			margin: auto;
+			padding: 5px;
+			background-color: #1111;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1> Welcome to Pj classes- AJAX</h1>
+	</header>
+	<div id="container">
+		<div id="result"></div>
+		<ul id="users"></ul>
+		<h3>Add post</h3>
+		<form id="postForm" action="https://jsonplaceholder.typicode.com/posts">
+			<input type="text"  id="title" placeholder="Enter title">
+			<br>
+			<br>
+			<textarea placeholder="Body" id="body"></textarea><br><br>
+			<input type="submit" value="Submit">
+
+		</form>
+	</div>
+	<script type="text/javascript"> 
+		$(document).ready(function(){
+			/*
+			$("#result").load('nn.srt',function(responseTxt, statusTxt,xhr){
+				if (statusTxt=="success") {
+
+					alert("file loaded");
+				}
+				else{
+					alert("Error :"+xhr.statusText);
+				}
+			});
+			
+			$.getJSON('users.json',function(data){
+				$.each(data, function(i,user){
+					$('ul#users').append('<li>'+user.firstName+'</li>');
+				});
+
+			});
+			
+			$.ajax({
+				method:'GET',
+				url:'https://jsonplaceholder.typicode.com/posts',
+				dataType:'json'
+			}).done(function(data){
+				console.log(data);
+				$.map(data,function(post,i){
+					$("#result").append('<h3>'+post.title+'</h3><p>'+post.body+'</p>');
+				});
+
+			});
+			*/
+			$('#postForm').submit(function(e){
+				e.preventDefault();
+
+				var title=$('#title').val();
+				var body=$('#body').val();
+				var url=$(this).attr('action'); 
+
+				$.post(url,{title:title,body:body}).done(function(data){
+					alert("post saved");
+					console.log("Post saved");
+					console.log(data);
+				});
+			});
+
+		});
+		
+	</script>
+</body>
+</html>
